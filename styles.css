@@ -1,0 +1,31 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5%; /* Space between buttons in percentage */
+    margin-top: 5%;
+}
+
+.custom-button {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw; /* Responsive font size based on viewport width */
+    color: #fff; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 2% 5%; /* Padding in percentage */
+    border-radius: 10%; /* Rounded corners in percentage */
+    border: 0.2vw solid rgba(255, 255, 255, 0.7); /* Light border in vw */
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.3); /* Shadow in vw */
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background on hover */
+    box-shadow: 0 0.8vw 1.2vw rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    color: #FFD700; /* Change text color to gold on hover */
+}
+
+.custom-button:active {
+    transform: scale(0.98); /* Pressed effect */
+}
